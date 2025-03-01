@@ -1,0 +1,139 @@
+/*
+    © 2025 abcDEF®: Ingenieurwissen mit KI. Alle Rechte vorbehalten. 🦀
+    Autor: Niels Buntrock
+    Verwendung ohne Genehmigung nicht gestattet.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@400;700&display=swap');
+
+body {
+    font-family: 'Genos', sans-serif;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: black;
+    color: limegreen;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h1 {
+    color: #abcDEF;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.error-title {
+    color: #E84343;
+    font-size: 3rem;
+}
+
+.content {
+    max-width: 600px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px 15px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+nav a {
+    color: #abcDEF;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: limegreen;
+    text-decoration: underline;
+}
+
+.terminal-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: black;
+    color: limegreen;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.terminal-text-logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: black;
+    color: #abcDEF;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cursor-container {
+    display: inline-flex;
+    align-items: center;
+}
+
+.blinking-cursor {
+    animation: blink 1.2s infinite ease-in-out;
+}
+
+@keyframes blink {
+    0%   { opacity: 1; }
+    20%  { opacity: 0.6; }
+    40%  { opacity: 0.2; }
+    60%  { opacity: 0.1; }
+    80%  { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+.glowing-sparkle {
+    animation: sparkle-glow 2s infinite ease-in-out;
+}
+
+@keyframes sparkle-glow {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 0.9rem;
+    color: #AABBCC;
+}
+
+.brand-highlight {
+    color: #abcDEF;
+}
+
+a {
+    color: #AABBCC;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
