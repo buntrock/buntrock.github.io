@@ -88,6 +88,28 @@ nav a:hover {
     color: limegreen;
     padding: 15px;
     border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.terminal-text a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.terminal-highlight {
+    text-decoration: none;
+    transition: text-decoration 0.3s ease-in-out;
+}
+
+.terminal-text a:hover .terminal-highlight {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    color: limegreen;
 }
 
 .terminal-text-logo {
@@ -134,6 +156,15 @@ footer {
     margin-top: auto;
     font-size: 0.9rem;
     color: #AABBCC;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 .brand-highlight {
