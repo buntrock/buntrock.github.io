@@ -6,10 +6,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Genos:wght@400;700&display=swap');
 
-body {
+html, body {
     font-family: 'Genos', sans-serif;
     text-align: center;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,13 +20,20 @@ body {
     color: limegreen;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 main {
-    flex-grow: 1;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding: 20px;
 }
 
 h1 {
@@ -48,19 +56,24 @@ h1 {
 
 nav {
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 5px 15px;
+    padding: 10px 15px;
     border-radius: 8px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 nav a {
     color: #abcDEF;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 10px;
-    padding: 5px 10px;
+    margin: 5px 10px;
+    padding: 8px 12px;
     transition: all 0.3s ease-in-out;
     font-size: 1.1rem;
+    display: inline-block;
 }
 
 nav a:hover {
@@ -118,9 +131,7 @@ footer {
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin-top: auto;
     font-size: 0.9rem;
     color: #AABBCC;
 }
@@ -136,4 +147,36 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .content {
+        padding: 20px;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 15px 0;
+    }
 }
